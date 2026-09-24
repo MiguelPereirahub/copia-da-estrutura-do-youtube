@@ -2,21 +2,89 @@
 <html lang="pt-br">
 <head>
     <style>
-        .interação{
-            border-radius: 50%;
-            height: 50px;
-            width: 50px;
+        span{
+            padding-bottom: 3px;
+            vertical-align:middle;
+            padding-left: 6px;
         }
+        .destaque{
+            padding-right: 6px;
+            padding-bottom: 3px;
+            font-variant: normal;
+            font-size: 3em;
+        }
+        .logo{
+            cursor: pointer;
+            background-image: url("Captura\ de\ tela\ 2026-09-23\ 175912.png");
+            background-size: cover;
+            width: 19vh;/*11*/
+            height: 5vh;/*3*/
+            position: relative;
+            top: -40px;
+            right: 1vh;
+            /*transform: translate(10%);*/
+        }
+        .interação{
+            top: -6vh;/*-35px*/
+            background-color: rgb(225, 224, 224);
+            border: none;
+            right:0.1vh;/*-53px*/
+            position: relative;
+            border-radius: 50%;
+            height: 40px;
+            width: 7vh;/*40px*/
+        }
+        .interação2{
+            color: rgb(37, 37, 37);
+            border-radius: 60px;
+            top: -6vh;/*35px*/
+            border: none;
+            background-color: rgb(225, 224, 224);
+            right: -0.1vh;/*4.5vh*/
+            position: relative;
+            height: 40px;
+            width: 98px;/*98px*/
+
+        }
+        .interação3{
+            border: 1px solid lightgrey;
+            top: -36px;
+            background-color: rgb(225, 224, 224);
+            right: 1vh;
+            position: relative;
+            border-radius: 50%;
+            height:41px;/*7.5vh*/
+            width: 6vh;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+
+        .interação:hover{
+            cursor: pointer;
+            background-color: rgb(190, 190, 190);
+        }
+        .interação2:hover{
+            cursor: pointer;
+            background-color: rgb(190, 190, 190);
+        }
+        .interação3:hover{
+            cursor: pointer;
+            background-color: rgb(190, 190, 190);
+        }
+
+
         input{
+            margin: auto;
+            position: relative;
+            padding-right: 20px;
             font-size: 25;
-            color: rgb(148, 148, 148);
-            top: 10px;
-            right: 460px;
-            position: absolute;
+            color:#000;
+            top: -40px;
+            right: -2.5vh;
             border: 1px solid lightgrey; 
             border-radius: 20px; 
             padding: 5px;
-            width: 570px;
+            width:30vw;
             height: 30px;
          }
         *{
@@ -24,6 +92,7 @@
             padding: 0px;
         }
         header{
+            display:flex;
             top: 0;
             position: fixed;
             background-color:white;
@@ -31,16 +100,17 @@
             padding: 50px;
         }
     </style>
-    <link rel="shortcut icon" href="youtube-icon-illustration-youtube-app-logo-social-media-icon_561158-3674.avif" type="image/x-icon">
+    <link rel="shortcut icon" href="youtube (1).png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube</title>
 </head>
 <body>
     <header>
-            <img src="Captura de tela 2026-09-23 175912.png" alt="youtube logo"  width="120px">
-        <abbr title="Pesquisar"><input type="text" value="Pesquisar"></abbr>
-        <button class="interação"></button>
+        <div class="logo">        </div><!--class="logo"-->
+        <abbr title="Pesquisar"><input type="text" placeholder="Pesquisar"><button class="interação3" ><img width="20px" height="20px" src="lupa.png" alt=""></button></abbr>
+        <abbr title="Pesquisar com sua Voz"><button class="interação"><img height="25px" width="25px" src="voz.png"  alt=""></button></abbr>
+        <button class="interação2"><span class="destaque">+</span> <span><b>Criar</b></span></button>
     </header>
 </body>
 </html>
