@@ -2,15 +2,28 @@
 <html lang="pt-br">
 <head>
     <style>
+        button{
+            text-align: center;
+        }
+        @font-face{
+            font-family:"+" ;
+            src: url("buick\ rounded.ttf") format("truetype");
+        }
         span{
             padding-bottom: 3px;
             vertical-align:middle;
             padding-left: 6px;
         }
+
+        .span2{
+            padding-bottom: 3px;
+            vertical-align:middle;
+            padding-left: 6px;
+        }
         .destaque{
+            font-family:"+" ;
             padding-right: 6px;
             padding-bottom: 3px;
-            font-variant: normal;
             font-size: 3em;
         }
         .logo{
@@ -25,6 +38,7 @@
             /*transform: translate(10%);*/
         }
         .interação{
+            margin-left: 6px;
             top: -6vh;/*-35px*/
             background-color: rgb(225, 224, 224);
             border: none;
@@ -47,6 +61,7 @@
 
         }
         .interação3{
+            display: inline-block;
             border: 1px solid lightgrey;
             top: -36px;
             background-color: rgb(225, 224, 224);
@@ -57,6 +72,29 @@
             width: 6vh;
             border-top-left-radius: 0px;
             border-bottom-left-radius: 0px;
+        }
+        .interação4{
+            display: inline;
+            margin-left: 6px;
+            top: -6vh;/*-35px*/
+            background-color: rgb(225, 224, 224);
+            border: none;
+            right:0.1vh;/*-53px*/
+            position: relative;
+            border-radius: 50%;
+            height: 40px;
+            width: 7vh;/*40px*/
+        }
+        .interação5{
+            background-color: transparent;
+            left:8px;
+            top: 60px;
+            margin-left: 6px;
+            border: none;
+            position: relative;
+            border-radius: 20px;
+            height: 60px;
+            width: 70px;/*40px*/
         }
 
         .interação:hover{
@@ -71,6 +109,14 @@
             cursor: pointer;
             background-color: rgb(190, 190, 190);
         }
+        .interação4:hover{
+            cursor: pointer;
+            background-color: rgb(190, 190, 190);
+        }
+        .interação5:hover{
+            cursor: pointer;
+            background-color: rgb(184, 183, 183);
+        }
 
 
         input{
@@ -80,11 +126,11 @@
             font-size: 25;
             color:#000;
             top: -40px;
-            right: -2.5vh;
+            right: -2.5vh;/*-2.5*/
             border: 1px solid lightgrey; 
             border-radius: 20px; 
             padding: 5px;
-            width:30vw;
+            width:20vw;
             height: 30px;
          }
         *{
@@ -92,12 +138,22 @@
             padding: 0px;
         }
         header{
-            display:flex;
+            display: flex;
             top: 0;
             position: fixed;
             background-color:white;
             width: 100%;
             padding: 50px;
+        }
+        section{
+            background-color:none;
+            width: 100px;
+            height: 100vh;
+        }
+        p{
+            font-family:Arial, Helvetica, sans-serif ;
+            font-size: 15px;
+            text-indent: 3px;
         }
     </style>
     <link rel="shortcut icon" href="youtube (1).png" type="image/x-icon">
@@ -107,10 +163,41 @@
 </head>
 <body>
     <header>
-        <div class="logo">        </div><!--class="logo"-->
+        <abbr title="pagina inicial do youtube">
+              <a href="#" target="_self" rel="internal">
+                  <div class="logo">        </div><!--class="logo"-->
+              </a>
+        </abbr>
         <abbr title="Pesquisar"><input type="text" placeholder="Pesquisar"><button class="interação3" ><img width="20px" height="20px" src="lupa.png" alt=""></button></abbr>
         <abbr title="Pesquisar com sua Voz"><button class="interação"><img height="25px" width="25px" src="voz.png"  alt=""></button></abbr>
-        <button class="interação2"><span class="destaque">+</span> <span><b>Criar</b></span></button>
+        <button class="interação2"><span class="destaque">+</span> <span class="span2"><b>Criar</b></span></button><abbr title="notificação"><button class="interação"><img width="20px" height="20px" src="notification.png" alt=""></button></abbr>
+        <!--
+        Usuario
+        <button class="interação4"><img src="user.png" width="20px" height="20px" alt=""></button>
+        -->
     </header>
+    <section>
+        <a href="#" target="_self">
+            <abbr title="inicio"><button class="interação5"><img width="20px" height="20px" src="home.png" alt="">
+            <br>
+            inicio
+                </button></abbr>
+        </a>
+        <br>
+        <abbr title="shorts"><button class="interação5"><img width="25px" height="25px" src="shorts3.png" alt="">
+        <br>
+    shorts
+</button></abbr>
+        <br>
+        <abbr title="incrições"><button class="interação5"><img width="20px" height="20px" src="youtube (2).png" alt="">
+        <br>
+    incrições
+</button></abbr>
+        <br>
+        <abbr title="usuario"><button class="interação5"><img width="20px" height="20px" src="user.png" alt="">
+        <br>
+    usuario</button></abbr>
+
+    </section>
 </body>
 </html>
