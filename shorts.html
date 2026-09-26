@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+a, abbr, button, span, input {
+    text-decoration: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+section a {
+    text-decoration: none !important;
+    color: inherit;
+}
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center; 
+            justify-content: space-between; 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 56px; 
+            padding: 0 16px; 
+            background-color: white;
+            z-index: 100;
+            border-bottom: 1px solid #f2f2f2;
+        }
+
+        .logo {
+            cursor: pointer;
+            background-image: url("Captura\ de\ tela\ 2026-09-23\ 175912.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 90px;
+            height: 24px;
+        }
+
+        .pesquisa {
+            max-width: 600px;
+            display: flex;
+            flex-grow: 1;       
+            margin: 0 20px;
+            align-items: center;
+        }
+
+        input {
+            flex-grow: 1;
+            width: 0; /* Permite que o flex-grow calcule a proporção responsiva */
+            height: 40px;
+            padding: 0 16px;
+            font-size: 16px;
+            color: #000;
+            border: 1px solid lightgrey; 
+            border-radius: 40px 0 0 40px; /* Arredonda lado esquerdo */
+            outline: none;
+        }
+
+        .interação3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f8f8;
+            border: 1px solid lightgrey;
+            border-left: none;
+            border-radius: 0 40px 40px 0; 
+            height: 40px;
+            padding: 0 20px;
+            cursor: pointer;
+        }
+
+        .interação {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 8px;
+            background-color: rgb(242, 242, 242);
+            border: none;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            cursor: pointer;
+        }
+
+        .interação2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(37, 37, 37);
+            border-radius: 40px;
+            border: none;
+            background-color: rgb(242, 242, 242);
+            height: 40px;
+            padding: 0 16px;
+            margin-left: 8px;
+            cursor: pointer;
+        }
+
+        .lado-direito {
+            display: flex;
+            align-items: center;
+        }
+
+        section {
+            position: fixed;
+            text-decoration: none;
+            background-color: none;
+            width: 72px;
+            height: 100vh;
+            padding-top: 70px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .interação5 {
+            background-color: transparent;
+            border: none;
+            border-radius: 10px;
+            height: 74px;
+            width: 64px;
+            font-size: 10px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+
+        .interação:hover, .interação2:hover, .interação3:hover, .interação5:hover {
+            background-color: rgb(225, 225, 225);
+        }
+
+        @font-face {
+            font-family: "+";
+            src: url("buick\ rounded.ttf") format("truetype");
+        }
+        span, .span2 {
+            padding-left: 4px;
+        }
+        .destaque {
+            font-family: "+";
+            font-size: 3em;
+            font-weight: bold;
+        }
+       .video {
+        
+        margin: 40px auto; 
+        width: 90%;         
+        max-width: 1000px;  
+
+        display: flexbox;
+        flex-wrap: wrap;   
+        gap: 10px;         
+        justify-content: center;
+    }
+
+    .video iframe {
+        height: 155 !important;/*155*/
+        width: 320 !important;/*320*/
+        justify-content: right;
+        flex: 1 1 300px;   
+        max-width: 360px;  
+        aspect-ratio: 16 / 9;
+        height: auto;
+        border: 3px solid transparent; 
+    }
+
+    </style>
+    <link rel="shortcut icon" href="youtube (1).png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+</head>
+<body>
+    <header>
+
+        <abbr title="pagina inicial do youtube">
+            <a href="youtube(estrutura).html" target="_self" rel="internal" style="text-decoration: none;">
+                <div class="logo"></div>
+            </a>
+        </abbr>
+
+
+        <div class="pesquisa">
+            <input type="text" placeholder="Pesquisar">
+            <abbr title="Pesquisar">
+                <button class="interação3">
+                    <img width="20px" height="20px" src="lupa.png" alt="">
+                </button>
+            </abbr>
+        </div>
+
+
+        <div class="lado-direito">
+            <abbr title="Pesquisar com sua Voz">
+                <button class="interação">
+                    <img height="24px" width="24px" src="voz.png" alt="">
+                </button>
+            </abbr>
+            
+            <button class="interação2">
+                <span class="destaque">+</span> 
+                <span class="span2"><b>Criar</b></span>
+            </button>
+            
+            <abbr title="notificação">
+                <button class="interação">
+                    <img width="20px" height="20px" src="notification.png" alt="">
+                </button>
+            </abbr>
+        </div>
+    </header>
+
+    <section>
+        <a href="youtube(estrutura).html" target="_self" style="text-decoration: none;">
+            <abbr title="inicio">
+                <button class="interação5">
+                    <img width="20px" height="20px" src="home.png" alt=""><br>inicio
+                </button>
+            </abbr>
+        </a>
+        <abbr title="shorts">
+            <button class="interação5">
+                <img width="25px" height="25px" src="shorts3.png" alt=""><br>shorts
+            </button>
+        </abbr>
+        <abbr title="incrições">
+            <button class="interação5">
+                <img width="20px" height="20px" src="youtube (2).png" alt=""><br>incrições
+            </button>
+        </abbr>
+        <abbr title="usuario">
+            <button class="interação5">
+                <img width="20px" height="20px" src="user.png" alt=""><br>usuario
+            </button>
+        </abbr>
+    </section>
+<body>
+    
+ <div class="video">
+   
+</div>
+</body>
+
+</body>
+</html>
