@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+
+        .direita{
+        display: none;
+        right:0 ;
+        top: 0;
+        position:absolute;
+        width:40%;
+        height: 50vh;
+        font-size: 1em;
+        background-color: #fff;
+        box-shadow: 1px 1px 3px black;
+        border-radius: 15px;
+        }
+        .interação:hover > .direita{
+        display: block;
+        }
+        h1{
+        text-align: center;
+        right: 0px;
+        font-size: 1em;
+        color: #000;
+        }
+        h2{
+        text-align: right;
+        font-size: 4em;
+        }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="universal.css">
     <style>
 a, abbr, button, span, input {
     text-decoration: none !important;
@@ -140,8 +141,11 @@ section a {
             margin-bottom: 8px;
         }
 
-        .interação:hover, .interação2:hover, .interação3:hover, .interação5:hover {
+        .interação2:hover, .interação3:hover, .interação5:hover {
             background-color: rgb(225, 225, 225);
+        }
+        .interação:hover > .direita{
+            display: block;
         }
 
         @font-face {
@@ -167,6 +171,7 @@ section a {
 }
 
    .video iframe {
+    border-radius: 15px;
     flex: 1 1 250px; 
     max-width: 360px;  
     aspect-ratio: 16 / 9;
@@ -215,6 +220,18 @@ section a {
             <abbr title="notificação">
                 <button class="interação">
                     <img width="20px" height="20px" src="notification.png" alt="">
+                    <article class="direita">
+                <h1>
+                Notificões
+                </h1>
+                <h2>0</h2>
+                <hr>
+                <h1>Importantes</h1>
+                <h2>0</h2>
+                <hr>
+                <h1>Mais Notificações</h1>
+                <h2>0</h2>
+                    </article>
                 </button>
             </abbr>
         </div>
@@ -250,7 +267,7 @@ section a {
         </abbr>
     </section>
 <body>
-    
+    <br><br><br>
  <div class="video">
     
     <iframe width="320" height="155" src="https://www.youtube.com/embed/Al3afD4mF6I?si=TYCRZ5jp4_C6bQOd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="padding: 3px;"></iframe>
