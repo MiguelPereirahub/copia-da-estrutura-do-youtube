@@ -3,8 +3,8 @@
 
         .direita{
         display: none;
-        right:0 ;
-        top: 0;
+        right:85px ;
+        top: 0px;
         position:absolute;
         width:40%;
         height: 55vh;
