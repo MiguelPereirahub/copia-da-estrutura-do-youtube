@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
-
+        .interação2{
+        background-color: rgb(225, 225, 225);               
+        }
+        .interação2:hover > .direita2{
+        display: block;
+        }
         .direita{
         display: none;
         right:85px ;
@@ -8,6 +13,18 @@
         position:absolute;
         width:40%;
         height: 55vh;
+        font-size: 1em;
+        background-color: #fff;
+        box-shadow: 1px 1px 3px black;
+        border-radius: 15px;
+        }
+        .direita2{
+        display: none;
+        right:85px ;
+        top: 0px;
+        position:absolute;
+        width:50vh;
+        height: 35vh;
         font-size: 1em;
         background-color: #fff;
         box-shadow: 1px 1px 3px black;
