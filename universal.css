@@ -36,20 +36,39 @@
         .interação:hover{
         background-color:rgb(190, 192, 194);
         }
+        .interação:hover > .som{
+        display: block;
+        }
         .interação2:hover{
         background-color:rgb(190, 192, 194);
         }
-        h1{
+         h1{
         text-align: center;
+        right: 0px;
+         }
+        h2{
+        text-align: right;
+        font-size: 3em;
+        }
+        /*h1{
+        padding-top: 50px;
+        padding-left: 40px;
+        text-align: left;
         right: 0px;
         font-size: 1em;
         color: #000;
         font-size: 2em;
         }
+        p{
+        color: #bcb9b9;
+        padding-left:39px ;
+        text-align: left;
+        padding-top: 16px;
+        }
         h2{
         text-align: right;
         font-size: 3em;
-        }
+        }*/
         .erro{
         width:300px;
         height: 300px;
@@ -61,4 +80,15 @@
         top: 50%;
         transform: translate(50%,-50%);
 
+        }
+        .som{
+        display: none;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: #fff;
+        width: 60%;
+        height: 400px;
+        box-shadow: 1px 1px 3px black;
         }
