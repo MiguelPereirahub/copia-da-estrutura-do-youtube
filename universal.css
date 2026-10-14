@@ -50,6 +50,9 @@
         text-align: right;
         font-size: 3em;
         }
+        .logo{
+                background-image: url("loggo-removebg-preview.png");
+        }
         /*h1{
         padding-top: 50px;
         padding-left: 40px;
